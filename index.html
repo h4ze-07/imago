@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/all.css" />
 		<link rel="stylesheet" href="css/media.css" />
 	</head>
@@ -16,7 +19,9 @@
 
 					<ul class="desktop-nav">
 						<li class="desktop-nav__item">
-							<a class="desktop-nav__link" id="menu-link">Produkty</a>
+							<a class="desktop-nav__link" id="menu-link"
+								>Produkty</a
+							>
 						</li>
 						<li class="desktop-nav__item">
 							<a href="/" class="desktop-nav__link">O nas</a>
@@ -34,29 +39,46 @@
 			</div>
 		</header>
 
-        <section class="menu" id="popup-menu">
-            <div class="menu__inner">
+		<section class="menu" id="popup-menu">
+			<div class="menu__inner">
+				<ul class="menu__inner-list">
+					<li class="menu__inner-item">
+						<a href="/" class="menu__inner-link">terminal POS</a>
+					</li>
+					<li class="menu__inner-item">
+						<a href="/" class="menu__inner-link">Panel PC</a>
+					</li>
+					<li class="menu__inner-item">
+						<a href="/" class="menu__inner-link"
+							>Android Panel PC
+						</a>
+					</li>
+					<li class="menu__inner-item">
+						<a href="/" class="menu__inner-link">Drawers</a>
+					</li>
+				</ul>
 
-                <ul class="menu__inner-list">
-                    <li class="menu__inner-item"><a href="/" class="menu__inner-link">terminal POS</a></li>
-                    <li class="menu__inner-item"><a href="/" class="menu__inner-link">Panel PC</a></li>
-                    <li class="menu__inner-item"><a href="/" class="menu__inner-link">Android Panel PC
-                    </a></li>
-                    <li class="menu__inner-item"><a href="/" class="menu__inner-link">Drawers</a></li>
-                </ul>
+				<ul class="menu__inner-list">
+					<li class="menu__inner-item">
+						<a href="/" class="menu__inner-link">Kiosks</a>
+					</li>
+					<li class="menu__inner-item">
+						<a href="/" class="menu__inner-link"
+							>Barcode scanners</a
+						>
+					</li>
+					<li class="menu__inner-item">
+						<a href="/" class="menu__inner-link"
+							>Stands ( Imago Tree )
+						</a>
+					</li>
+				</ul>
 
-                <ul class="menu__inner-list">
-                    <li class="menu__inner-item"><a href="/" class="menu__inner-link">Kiosks</a></li>
-                    <li class="menu__inner-item"><a href="/" class="menu__inner-link">Barcode scanners</a></li>
-                    <li class="menu__inner-item"><a href="/" class="menu__inner-link">Stands ( Imago Tree )
-                    </a></li>
-                </ul>
-
-                <div class="menu__img">
-                    <img src="images/menuDesktop.png" alt="">
-                </div>
-            </div>
-        </section>
+				<div class="menu__img">
+					<img src="images/menuDesktop.png" alt="" />
+				</div>
+			</div>
+		</section>
 
 		<main class="main">
 			<section class="hero">
@@ -84,6 +106,10 @@
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section class="big-img">
+				<img src="images/bigImgSection.png" alt="" />
 			</section>
 
 			<section class="about">
@@ -178,8 +204,8 @@
 				<div class="container">
 					<div class="products__inner">
 						<h2 class="title">Nasze produkty</h2>
-						<div class="products__swiper">
-							<!-- SWIPER CARD -->
+
+						<!-- <div class="products__swiper">
 							<div class="swiper-card active">
 								<div class="swiper-card__img">
 									<p class="swiper__title">Panel PC</p>
@@ -209,6 +235,62 @@
 									Zobacz katalog
 								</button>
 							</div>
+						</div> -->
+
+						<div class="swiper mySwiper products__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="swiper-card">
+										<div class="swiper-card__img">
+											<p class="swiper__title">
+												Panel PC
+											</p>
+											<img
+												src="images/swiper1.png"
+												alt=""
+												class="swiper__img" />
+										</div>
+
+										<button class="catalog-btn">
+											Zobacz katalog
+										</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-card">
+										<div class="swiper-card__img">
+											<p class="swiper__title">
+												Barcode scanners
+											</p>
+											<img
+												src="images/swiper2.png"
+												alt=""
+												class="swiper__img" />
+										</div>
+
+										<button class="catalog-btn">
+											Zobacz katalog
+										</button>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-card">
+										<div class="swiper-card__img">
+											<p class="swiper__title">
+												Barcode scanners
+											</p>
+											<img
+												src="images/swiper2.png"
+												alt=""
+												class="swiper__img" />
+										</div>
+
+										<button class="catalog-btn">
+											Zobacz katalog
+										</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -216,61 +298,85 @@
 
 			<section class="about-cards">
 				<div class="container">
-					<div class="about__inner">
+					<div class="about-cards__inner">
 						<h2 class="title">Dlaczego imago?</h2>
 
 						<div class="about-cards__container">
 							<div class="about-cards__card">
-                                <img src="images/about-card-bg1.png" alt="" class="about-cards__img">
+								<img
+									src="images/about-card-bg1.png"
+									alt=""
+									class="about-cards__img" />
 
-                                <div class="about-cards__top">
-                                    <span class="line"></span>
-                                    <span class="num">01</span>
-                                </div>
+								<div class="about-cards__top">
+									<span class="line"></span>
+									<span class="num">01</span>
+								</div>
 
-
-                                <div class="about-cards__bottom">
-                                    <h3 class="about-cards__card-title">Wsparcie 24/7</h3>
-                                    <p class="about-cards__card-desc">
-                                        Nasi specjaliści są gotowi pomóc Ci w każdej chwili.
-                                        Lata pomyślnego dostarczania wysokiej jakości rozwiązań POS.Wsparcie 24/7 to nie tylko obietnica, ale również fundament naszej firmy.
-                                    </p>
-                                </div>
-                            </div>
+								<div class="about-cards__bottom">
+									<h3 class="about-cards__card-title">
+										Wsparcie 24/7
+									</h3>
+									<p class="about-cards__card-desc">
+										Nasi specjaliści są gotowi pomóc Ci w
+										każdej chwili. Lata pomyślnego
+										dostarczania wysokiej jakości rozwiązań
+										POS.Wsparcie 24/7 to nie tylko
+										obietnica, ale również fundament naszej
+										firmy.
+									</p>
+								</div>
+							</div>
 							<div class="about-cards__card">
-                                <img src="images/about-card-bg2.png" alt="" class="about-cards__img">
+								<img
+									src="images/about-card-bg2.png"
+									alt=""
+									class="about-cards__img" />
 
-                                <div class="about-cards__top">
-                                    <span class="line"></span>
-                                    <span class="num">02</span>
-                                </div>
+								<div class="about-cards__top">
+									<span class="line"></span>
+									<span class="num">02</span>
+								</div>
 
-
-                                <div class="about-cards__bottom">
-                                    <h3 class="about-cards__card-title">Technologie przyszłości</h3>
-                                    <p class="about-cards__card-desc">
-                                        Nasi specjaliści są gotowi pomóc Ci w każdej chwili.
-                                        Lata pomyślnego dostarczania wysokiej jakości rozwiązań POS.Wsparcie 24/7 to nie tylko obietnica, ale również fundament naszej firmy.
-                                    </p>
-                                </div>
-                            </div>
+								<div class="about-cards__bottom">
+									<h3 class="about-cards__card-title">
+										Technologie przyszłości
+									</h3>
+									<p class="about-cards__card-desc">
+										Nasi specjaliści są gotowi pomóc Ci w
+										każdej chwili. Lata pomyślnego
+										dostarczania wysokiej jakości rozwiązań
+										POS.Wsparcie 24/7 to nie tylko
+										obietnica, ale również fundament naszej
+										firmy.
+									</p>
+								</div>
+							</div>
 							<div class="about-cards__card">
-                                <img src="images/about-card-bg3.png" alt="" class="about-cards__img">
+								<img
+									src="images/about-card-bg3.png"
+									alt=""
+									class="about-cards__img" />
 
-                                <div class="about-cards__top">
-                                    <span class="line"></span>
-                                    <span class="num">03</span>
-                                </div>
+								<div class="about-cards__top">
+									<span class="line"></span>
+									<span class="num">03</span>
+								</div>
 
-
-                                <div class="about-cards__bottom">
-                                    <h3 class="about-cards__card-title">Doświadczenie i zaufanie</h3>
-                                    <p class="about-cards__card-desc">
-                                        Nasi specjaliści są gotowi pomóc Ci w każdej chwili.
-                                        Lata pomyślnego dostarczania wysokiej jakości rozwiązań POS.Wsparcie 24/7 to nie tylko obietnica, ale również fundament naszej firmy.
-                                    </p>
-                                </div>
-                            </div>
+								<div class="about-cards__bottom">
+									<h3 class="about-cards__card-title">
+										Doświadczenie i zaufanie
+									</h3>
+									<p class="about-cards__card-desc">
+										Nasi specjaliści są gotowi pomóc Ci w
+										każdej chwili. Lata pomyślnego
+										dostarczania wysokiej jakości rozwiązań
+										POS.Wsparcie 24/7 to nie tylko
+										obietnica, ale również fundament naszej
+										firmy.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -406,23 +512,35 @@
 					<div class="footer-center">
 						<div class="links-list">
 							<a href="/" class="links-list__item">O nas</a>
-                            <a href="/" class="links-list__item">Kontakt</a>
-                            <a href="/" class="links-list__item">News</a>
-                            <a href="/" class="links-list__item">Płatność i dostawa</a>
-                            <a href="/" class="links-list__item">Polityka zwrotów</a>
+							<a href="/" class="links-list__item">Kontakt</a>
+							<a href="/" class="links-list__item">News</a>
+							<a href="/" class="links-list__item"
+								>Płatność i dostawa</a
+							>
+							<a href="/" class="links-list__item"
+								>Polityka zwrotów</a
+							>
 						</div>
-                        <div class="devider"></div>
+						<div class="devider"></div>
 						<div class="links-list">
-							<a href="/" class="links-list__item">Terminal POS</a>
-                            <a href="/" class="links-list__item">Panel PC</a>
-                            <a href="/" class="links-list__item">Android Panel PC</a>
-                            <a href="/" class="links-list__item">Drawers</a>
+							<a href="/" class="links-list__item"
+								>Terminal POS</a
+							>
+							<a href="/" class="links-list__item">Panel PC</a>
+							<a href="/" class="links-list__item"
+								>Android Panel PC</a
+							>
+							<a href="/" class="links-list__item">Drawers</a>
 						</div>
-                        <div class="devider"></div>
+						<div class="devider"></div>
 						<div class="links-list">
 							<a href="/" class="links-list__item">Kiosks</a>
-                            <a href="/" class="links-list__item">Barcode scanners</a>
-                            <a href="/" class="links-list__item">Stands ( Imago Tree )</a>
+							<a href="/" class="links-list__item"
+								>Barcode scanners</a
+							>
+							<a href="/" class="links-list__item"
+								>Stands ( Imago Tree )</a
+							>
 						</div>
 					</div>
 
@@ -459,6 +577,9 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
