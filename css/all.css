@@ -1,0 +1,429 @@
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: normal;
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+	line-height: 1;
+	background: #fff;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong,
+b {
+	font-weight: 600;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	border-style: none;
+	width: 100%;
+	height: auto;
+}
+
+form fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+input,
+textarea,
+select {
+	vertical-align: middle;
+	padding: 0;
+	box-sizing: border-box;
+	resize: none;
+
+	border: 1px solid transparent;
+	color: #000c49;
+	background-color: #FCFCFC;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+	color: #000c49;
+	font-size: 16px;
+}
+
+textarea:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+	color: #b9b9b9;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #fff;
+	transition: background-color 5000s ease-in-out 0s;
+	box-shadow: inset 0 0 20px 20px transparent;
+}
+
+.container {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto 0 auto;
+	height: 100%;
+	max-width: 1440px;
+}
+
+header,
+main,
+footer,
+section {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+/* COMMON STYLES */
+
+.title {
+	color: #292929;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.catalog-btn {
+	width: 335px;
+	height: 53px;
+	padding: 15px 40px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 130%;
+	text-transform: uppercase;
+	border-radius: 30px;
+	background: #292929;
+	border: none;
+}
+
+
+.selfStart {
+    align-self: flex-start;
+}
+
+.selfCenter {
+    align-self: center;
+}
+
+.selfEnd {
+    align-self: flex-end;
+}
+
+/* COMMON STYLES */
+
+/* HEADER STYLES */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+    background: #fff;
+}
+
+.header__inner {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__nav {
+	display: flex;
+}
+
+.desktop-nav {
+	display: flex;
+	gap: 100px;
+}
+
+.header__logo img {
+	max-width: 183px;
+	height: 24px;
+}
+
+.desktop-nav__link {
+	color: #292929;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	position: relative;
+}
+
+.desktop-nav__link::before {
+	content: "";
+	position: absolute;
+	opacity: 0;
+	transition: all 0.3s;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #000;
+}
+
+.desktop-nav__link:hover {
+	text-shadow: #000 0px 0px 0px;
+}
+
+.desktop-nav__link:hover::before {
+	opacity: 1;
+}
+
+.lang {
+	color: #292929;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+/* HEADER STYLES */
+
+/* HERO STYLES */
+.hero {
+	padding-top: 64px;
+	height: 100vh;
+	position: relative;
+}
+
+.hero__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hero__video video {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.hero__logo {
+	margin-top: 115px;
+}
+
+.hero__block {
+	margin-top: 106px;
+	background: rgba(252, 252, 252, 0.2);
+	backdrop-filter: blur(10px);
+	padding: 30px;
+	max-width: 433px;
+}
+
+.hero__block > * {
+	z-index: 2;
+}
+
+.hero__heading {
+	max-width: 373px;
+	color: #292929;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.hero__text {
+	max-width: 373px;
+	color: #292929;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 130%;
+
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+/* HERO STYLES */
+
+/* ABOUT SECTION STYLES */
+
+.about {
+	padding-top: 100px;
+}
+
+.about__plates {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.about__plate {
+	border-radius: 20px;
+	overflow: hidden;
+	height: 304px;
+}
+
+.img-plate {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.text-plate {
+    display: flex;
+}
+
+.text-plate__img {
+	width: 85px;
+	height: 50px;
+	margin-bottom: 26px;
+}
+
+.text-plate__heading {
+	max-width: 413px;
+	color: #292929;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 130%;
+	text-transform: uppercase;
+}
+
+.text-plate__text {
+    max-width: 423px;
+	margin-top: 15px;
+	color: #757575;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 130%;
+}
+
+/* ABOUT SECTION STYLES */
