@@ -221,7 +221,7 @@
 	}
 
     .mobile-menu {
-        display: flex;
+        display: block;
     }
 
     .hero__block {

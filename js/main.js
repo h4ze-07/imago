@@ -18,10 +18,12 @@ popupArea.addEventListener('click', (e) => {
 
 //burger
 const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobile-menu');
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
     body.classList.toggle('stopScroll');
+    mobileMenu.classList.toggle('active')
 })
 
 
