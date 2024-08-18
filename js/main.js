@@ -109,6 +109,13 @@ var swiper3 = new Swiper(".mySwiper3", {
     }
 });
 
+var swiper4 = new Swiper(".reviewsSwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 //animations
 gsap.registerPlugin(ScrollTrigger);
 
